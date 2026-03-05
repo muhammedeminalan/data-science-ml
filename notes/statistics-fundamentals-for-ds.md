@@ -386,13 +386,14 @@ Değişkenler (variables), verideki her bir sütunun tipini tanımlar. Tip bilme
 
 ```
                     VARIABLE TYPES (Değişken Tipleri)
-                    ─────────────────────────────────
-                    │                               │
+               ─────────────────────────────────────────
+                  │                               │
             Categorical                       Numerical
             (Kategorik)                       (Sayısal)
+            ─────────────                     ──────────────
             │           │                     │            │
         Nominal     Ordinal              Discrete     Continuous
-        (İsimsel)   (Sıralı)            (Kesikli)    (Sürekli)
+        (İsimsel)   (Sıralı)            (Kesikli)     (Sürekli)
 ```
 
 - **Categorical (kategorik):** Gruplara/etiketlere ayrılan veri. Matematiksel işlem yapılamaz.
@@ -776,7 +777,7 @@ Adım 8b — Sonuç:
 
 ```
 ┌──────────────────────────────────────────────────┐
-│  DATA: [12, 25, 18, 30, 22, 15, 28, 50]  n = 8  │
+│  DATA: [12, 25, 18, 30, 22, 15, 28, 50]  n = 8   │
 ├──────────────────────────────────────────────────┤
 │  Variable Type  : Continuous Numerical           │
 │  Mean (x̄)       : 25.0 dk                        │
@@ -786,7 +787,7 @@ Adım 8b — Sonuç:
 │  Q1             : 16.5                           │
 │  Q3             : 29.0                           │
 │  IQR            : 12.5                           │
-│  Outlier(s)     : 50 (üst sınır 47.75'i aşıyor) │
+│  Outlier(s)     : 50 (üst sınır 47.75'i aşıyor)  │
 │  Variance (s²)  : 140.86 dk²                     │
 │  Std Dev (s)    : 11.87 dk                       │
 ├──────────────────────────────────────────────────┤
@@ -829,13 +830,13 @@ Variance:
 ```
 ┌──────────────┬──────────────────┬──────────────────┐
 │   Ölçü       │  Outlier DAHİL   │  Outlier HARİÇ   │
-│              │  n=8             │  n=7              │
+│              │  n=8             │  n=7             │
 ├──────────────┼──────────────────┼──────────────────┤
-│  Mean        │  25.00 dk        │  21.43 dk         │
-│  Median      │  23.50 dk        │  22.00 dk         │
-│  Range       │  38 dk           │  18 dk            │
-│  Variance    │  140.86 dk²      │  45.27 dk²        │
-│  Std Dev     │  11.87 dk        │  6.73 dk          │
+│  Mean        │  25.00 dk        │  21.43 dk        │
+│  Median      │  23.50 dk        │  22.00 dk        │
+│  Range       │  38 dk           │  18 dk           │
+│  Variance    │  140.86 dk²      │  45.27 dk²       │
+│  Std Dev     │  11.87 dk        │  6.73 dk         │
 └──────────────┴──────────────────┴──────────────────┘
 
 → Mean:     25.00 → 21.43  (3.57 dk düştü → %14 fark)
