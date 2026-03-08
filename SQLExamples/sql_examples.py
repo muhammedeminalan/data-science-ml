@@ -13,7 +13,6 @@ def create_dataBase():
     # Bağlantı ve cursor nesnesini geri döndür
     return conn, cursor
 
-
 def create_table(cursor):
     # students tablosunu oluştur; DDL (Data Definition Language) komutu
     cursor.execute('''CREATE TABLE students
@@ -85,6 +84,7 @@ def read_data(cursor):
         print(row)
 
 
+
 def update_data(cursor):
     print("\n--- GÜNCELLEME (UPDATE) ---")
     # UPDATE ... SET ... WHERE: koşula uyan satırın belirtilen sütununu günceller
@@ -92,6 +92,7 @@ def update_data(cursor):
     cursor.execute("UPDATE students SET city = 'San Francisco' WHERE name = 'Alice'")
     # rowcount: etkilenen (güncellenen) satır sayısını verir
     print(f"✅ Etkilenen satır: {cursor.rowcount}")
+  
 
 
 def delete_data(cursor):
